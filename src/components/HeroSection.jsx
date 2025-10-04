@@ -140,9 +140,9 @@ const HeroSection = () => {
               <div className="flex justify-between">
                 <div>
                   <p className="text-sm font-semibold">{"Free Priority Production".toUpperCase()}</p>
-                  <p className="text-xs font-semibold text-[#c9b5ff]">Bw Smart • Skip the Wait</p>
+                  <p className="text-xs font-semibold text-[#c9b5ff] dark:text-white">Bw Smart • Skip the Wait</p>
                 </div>
-                <div className="flex justify-center items-center text-sm text-[#c9b5ff]">
+                <div className="flex justify-center items-center text-sm text-[#c9b5ff] dark:text-white">
                   <p>Ends in 03h 00m</p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ const HeroSection = () => {
               <div className="flex space-x-3 items-center">
                 <p className="text-[#666] dark:text-white font-bold line-through text-base">£159.00</p>
                 <p className="font-bold text-lg text-gray-900 dark:text-white">£111.30 GBP</p>
-                <p className="text-[#ff4444] text-xs font-semibold">30% OFF</p>
+                <p className="text-[#ff4444] text-xs font-semibold dark:text-white">30% OFF</p>
               </div>
               <div>
                 <p className="text-[#666] dark:text-white text-sm">Tax included.</p>
@@ -246,7 +246,7 @@ const HeroSection = () => {
                 <div className="flex items-center">
                   <p className="font-bold text-lg text-gray-900 dark:text-white">Fittings : </p>
                   <p className="text-[#666] dark:text-white text-sm pl-2">{selectedFitting}</p>
-                  <p className="text-[#ff4444] text-xs pl-4 font-semibold">Tool free option</p>
+                  <p className="text-[#ff4444] text-xs pl-4 font-semibold dark:text-white">Tool free option</p>
                 </div>
                 <IoMdInformationCircleOutline />
               </div>

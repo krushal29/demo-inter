@@ -43,17 +43,17 @@ const Navbar = () => {
         {/* Centered Navigation Links */}
         <nav className="hidden lg:flex flex-grow justify-center">
           <ul className="flex items-center space-x-10 font-semibold text-sm tracking-wider text-gray-800 dark:text-white">
-            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">HOME</Link></li>
-            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">SHOP</Link></li>
-            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">UPLOAD YOUR OWN</Link></li>
-            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">MATERIALS</Link></li>
+            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-white transition-colors">HOME</Link></li>
+            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-white transition-colors">SHOP</Link></li>
+            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-white transition-colors">UPLOAD YOUR OWN</Link></li>
+            <li><Link href="#" className="hover:text-purple-600 dark:hover:text-white transition-colors">MATERIALS</Link></li>
             <li className="flex items-center space-x-2">
-              <Link href="#" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">HOT NOW</Link>
+              <Link href="#" className="hover:text-purple-600 dark:hover:text-white transition-colors">HOT NOW</Link>
               <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">HOT</span>
             </li>
             <li>
               <Link href="#" aria-label="Special Offers">
-                <BsSnow className="h-5 w-5 text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors" />
+                <BsSnow className="h-5 w-5 text-gray-700 dark:text-white hover:text-blue-500 dark:hover:text-white transition-colors" />
               </Link>
             </li>
           </ul>
@@ -65,7 +65,7 @@ const Navbar = () => {
             <CiSearch size={22} className="text-gray-700 dark:text-white" />
           </button>
           <Link href="/account" aria-label="My Account">
-            <CiUser size={28} className="text-gray-700 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors" />
+            <CiUser size={28} className="text-gray-700 dark:text-white hover:text-purple-600 dark:hover:text-white transition-colors" />
           </Link>
           <button className="border border-gray-300 dark:border-gray-700 rounded-full px-5 py-2 text-sm font-bold text-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-[#1b1b1e] hover:border-gray-400 dark:hover:border-gray-600 transition-colors">
             £0.00

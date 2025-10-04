@@ -10,10 +10,10 @@ const TopBar = () => {
         <div className="container mx-auto px-6 h-8 flex justify-between items-center">
           <p className="font-light text-sm">Welcome to our store</p>
           <div className="flex space-x-6">
-            <Link href="#" className="hover:text-gray-300 transition-colors text-sm">
+            <Link href="#" className="hover:text-gray-300 dark:hover:text-white transition-colors text-sm">
               Faqs
             </Link>
-            <Link href="#" className="hover:text-gray-300 transition-colors text-sm">
+            <Link href="#" className="hover:text-gray-300 dark:hover:text-white transition-colors text-sm">
               Contact us
             </Link>
           </div>
