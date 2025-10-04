@@ -58,7 +58,7 @@ const HeroSection = () => {
   return (
     <div className="flex justify-center mt-35">
       <div className="w-[95%] py-5">
-        <p className="pb-5 text-[#6b7280] dark:text-gray-400 text-sm">Home / Categories / Abstract / <span className="text-[#111835] dark:text-gray-100">Prismatic Burst</span></p>
+        <p className="pb-5 text-[#6b7280] dark:text-white text-sm">Home / Categories / Abstract / <span className="text-[#111835] dark:text-white">Prismatic Burst</span></p>
 
         <div className="flex gap-6 justify-between">
           {/* LEFT SIDE - IMAGE GALLERY */}
@@ -98,17 +98,17 @@ const HeroSection = () => {
 
               {/* RIGHT COLUMN - Icons */}
               <div className="absolute right-4 top-4 flex flex-col space-y-3">
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
-                  <FaRegHeart className="text-xl" />
+                <button className="p-2 bg-white dark:bg-[#1b1b1e] rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-[#232326]">
+                  <FaRegHeart className="text-xl dark:text-white" />
                 </button>
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
-                  <FaSearchPlus className="text-xl" />
+                <button className="p-2 bg-white dark:bg-[#1b1b1e] rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-[#232326]">
+                  <FaSearchPlus className="text-xl dark:text-white" />
                 </button>
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
-                  <FaCog className="text-xl" />
+                <button className="p-2 bg-white dark:bg-[#1b1b1e] rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-[#232326]">
+                  <FaCog className="text-xl dark:text-white" />
                 </button>
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
-                  <FaShareAlt className="text-xl" />
+                <button className="p-2 bg-white dark:bg-[#1b1b1e] rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-[#232326]">
+                  <FaShareAlt className="text-xl dark:text-white" />
                 </button>
               </div>
 
@@ -132,7 +132,7 @@ const HeroSection = () => {
             </div>
 
             <div className="pt-4">
-              <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Vibrant Abstract Rainy Cityscape Wall Art</h1>
+              <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Vibrant Abstract Rainy Cityscape Wall Art</h1>
             </div>
 
             {/* Offer Banner */}
@@ -158,12 +158,12 @@ const HeroSection = () => {
             {/* Price Section */}
             <div className="py-5 border-b border-[#d9d9d9] dark:border-gray-700">
               <div className="flex space-x-3 items-center">
-                <p className="text-[#666] dark:text-gray-400 font-bold line-through text-base">£159.00</p>
-                <p className="font-bold text-lg text-gray-900 dark:text-gray-100">£111.30 GBP</p>
+                <p className="text-[#666] dark:text-white font-bold line-through text-base">£159.00</p>
+                <p className="font-bold text-lg text-gray-900 dark:text-white">£111.30 GBP</p>
                 <p className="text-[#ff4444] text-xs font-semibold">30% OFF</p>
               </div>
               <div>
-                <p className="text-[#666] dark:text-gray-400 text-sm">Tax included.</p>
+                <p className="text-[#666] dark:text-white text-sm">Tax included.</p>
               </div>
             </div>
 
@@ -171,8 +171,8 @@ const HeroSection = () => {
             <div className="py-5 border-b-2 border-[#d9d9d9] dark:border-gray-700">
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
-                  <p className="font-bold text-lg text-gray-900 dark:text-gray-100">Material : </p>
-                  <p className="text-[#666] dark:text-gray-400 text-sm pl-2">{selectedMaterial}</p>
+                  <p className="font-bold text-lg text-gray-900 dark:text-white">Material : </p>
+                  <p className="text-[#666] dark:text-white text-sm pl-2">{selectedMaterial}</p>
                 </div>
                 <IoMdInformationCircleOutline />
               </div>
@@ -181,7 +181,7 @@ const HeroSection = () => {
                   <button
                     key={index}
                     className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${
-                      selectedMaterial === material ? "bg-black text-white dark:bg-white dark:text-black" : "bg-gray-200 text-gray-700 dark:bg-[#1b1b1e] dark:text-gray-300"
+                      selectedMaterial === material ? "bg-black text-white dark:bg-[#6C35FF] dark:text-white" : "bg-gray-200 text-gray-700 dark:bg-[#1b1b1e] dark:text-white"
                     }`}
                     onClick={() => setSelectedMaterial(material)}
                   >
@@ -195,8 +195,8 @@ const HeroSection = () => {
             <div className="py-5 border-b border-[#d9d9d9] dark:border-gray-700">
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
-                  <p className="font-bold text-lg text-gray-900 dark:text-gray-100">Size : </p>
-                  <p className="text-[#666] dark:text-gray-400 text-sm pl-2">{selectedSize}</p>
+                  <p className="font-bold text-lg text-gray-900 dark:text-white">Size : </p>
+                  <p className="text-[#666] dark:text-white text-sm pl-2">{selectedSize}</p>
                 </div>
                 <IoMdInformationCircleOutline />
               </div>
@@ -205,7 +205,7 @@ const HeroSection = () => {
                   <button
                     key={index}
                     className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${
-                      selectedSize === size ? "bg-black text-white dark:bg-white dark:text-black" : "bg-gray-200 text-gray-700 dark:bg-[#1b1b1e] dark:text-gray-300"
+                      selectedSize === size ? "bg-black text-white dark:bg-[#6C35FF] dark:text-white" : "bg-gray-200 text-gray-700 dark:bg-[#1b1b1e] dark:text-white"
                     }`}
                     onClick={() => setSelectedSize(size)}
                   >
@@ -219,8 +219,8 @@ const HeroSection = () => {
             <div className="py-5 border-b border-[#d9d9d9] dark:border-gray-700">
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
-                  <p className="font-bold text-lg text-gray-900 dark:text-gray-100">Frame Border : </p>
-                  <p className="text-[#666] dark:text-gray-400 text-sm pl-2">
+                  <p className="font-bold text-lg text-gray-900 dark:text-white">Frame Border : </p>
+                  <p className="text-[#666] dark:text-white text-sm pl-2">
                     {frameBorders.find((b) => b.id === selectedFrameBorder)?.label}
                   </p>
                 </div>
@@ -244,8 +244,8 @@ const HeroSection = () => {
             <div className="py-5">
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
-                  <p className="font-bold text-lg text-gray-900 dark:text-gray-100">Fittings : </p>
-                  <p className="text-[#666] dark:text-gray-400 text-sm pl-2">{selectedFitting}</p>
+                  <p className="font-bold text-lg text-gray-900 dark:text-white">Fittings : </p>
+                  <p className="text-[#666] dark:text-white text-sm pl-2">{selectedFitting}</p>
                   <p className="text-[#ff4444] text-xs pl-4 font-semibold">Tool free option</p>
                 </div>
                 <IoMdInformationCircleOutline />
@@ -255,7 +255,7 @@ const HeroSection = () => {
                   <button
                     key={index}
                     className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${
-                      selectedFitting === fitting ? "bg-black text-white dark:bg-white dark:text-black" : "bg-gray-200 text-gray-700 dark:bg-[#1b1b1e] dark:text-gray-300"
+                      selectedFitting === fitting ? "bg-black text-white dark:bg-[#6C35FF] dark:text-white" : "bg-gray-200 text-gray-700 dark:bg-[#1b1b1e] dark:text-white"
                     }`}
                     onClick={() => setSelectedFitting(fitting)}
                   >
@@ -285,7 +285,7 @@ const HeroSection = () => {
                   Add to Cart
                 </button>
               </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400">More payment options available at checkout.</p>
+              <p className="text-sm text-gray-500 dark:text-white">More payment options available at checkout.</p>
             </div>
           </div>
         </div>
