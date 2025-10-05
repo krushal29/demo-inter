@@ -13,7 +13,7 @@ const Navbar = ({toggleDarkMode,isDarkMode}) => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
-            <Image src="/Logo.png" alt="Your Company Logo" width={65} height={40} />
+            <Image src='/Logo.jpg' alt="Your Company Logo" width={65} height={40} />
           </Link>
         </div>
 
