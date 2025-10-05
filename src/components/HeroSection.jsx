@@ -30,7 +30,7 @@ const productImages = [
   { id: 6, src: "/img.png", bg: "/bgimg6.jpg" },
 ];
 
-const HeroSection = () => {
+const HeroSection = ({isDarkMode}) => {
   const [selectedMaterial, setSelectedMaterial] = useState("Acrylic");
   const [selectedSize, setSelectedSize] = useState("M: 800 × 800mm");
   const [selectedFrameBorder, setSelectedFrameBorder] = useState("none");
@@ -56,9 +56,9 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="flex justify-center mt-35">
-      <div className="w-[95%] py-5">
-        <p className="pb-5 text-[#6b7280] text-sm">Home / Categories / Abstract / <span className="text-[#111835]">Prismatic Burst</span></p>
+    <div className="flex justify-center">
+      <div className="w-[95%] py-5 mt-35">
+        <p className={`pb-5 ${isDarkMode?"text-[#6b7280]":"text-[#6b7280]"} text-sm`}>Home / Categories / Abstract / <span className={`${isDarkMode?"text-white":"text-[#111835]"}`}>Prismatic Burst</span></p>
 
         <div className="flex gap-6 justify-between">
           {/* LEFT SIDE - IMAGE GALLERY */}
@@ -98,16 +98,16 @@ const HeroSection = () => {
 
               {/* RIGHT COLUMN - Icons */}
               <div className="absolute right-4 top-4 flex flex-col space-y-3">
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
+                <button className={`p-2 text-black bg-white rounded-full shadow-md hover:bg-gray-100`}>
                   <FaRegHeart className="text-xl" />
                 </button>
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
+                <button className="p-2 text-black bg-white rounded-full shadow-md hover:bg-gray-100">
                   <FaSearchPlus className="text-xl" />
                 </button>
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
+                <button className="p-2 text-black bg-white rounded-full shadow-md hover:bg-gray-100">
                   <FaCog className="text-xl" />
                 </button>
-                <button className="p-2 bg-white rounded-full shadow-md hover:bg-gray-100">
+                <button className="p-2 text-black bg-white rounded-full shadow-md hover:bg-gray-100">
                   <FaShareAlt className="text-xl" />
                 </button>
               </div>
@@ -180,8 +180,8 @@ const HeroSection = () => {
                 {materialOptions.map((material, index) => (
                   <button
                     key={index}
-                    className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${
-                      selectedMaterial === material ? "bg-black text-white" : "bg-gray-200 text-gray-700"
+                    className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${isDarkMode?
+                      selectedMaterial === material ? "bg-white text-[#0f172a]" : "bg-[#2f333e] text-white":selectedMaterial === material ? "bg-black text-white" : "bg-gray-200 text-gray-700"
                     }`}
                     onClick={() => setSelectedMaterial(material)}
                   >
@@ -204,8 +204,8 @@ const HeroSection = () => {
                 {sizeOptions.map((size, index) => (
                   <button
                     key={index}
-                    className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${
-                      selectedSize === size ? "bg-black text-white" : "bg-gray-200 text-gray-700"
+                    className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${isDarkMode?
+                      selectedSize === size ? "bg-white text-[#0f172a]" : "bg-[#2f333e] text-white":selectedSize === size ? "bg-black text-white" : "bg-gray-200 text-gray-700"
                     }`}
                     onClick={() => setSelectedSize(size)}
                   >
@@ -254,8 +254,8 @@ const HeroSection = () => {
                 {fittingOptions.map((fitting, index) => (
                   <button
                     key={index}
-                    className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${
-                      selectedFitting === fitting ? "bg-black text-white" : "bg-gray-200 text-gray-700"
+                    className={`text-sm font-bold rounded-[5px] px-3 py-2 cursor-pointer ${isDarkMode?
+                      selectedFitting === fitting ? "bg-white text-[#0f172a]" : "bg-[#2f333e] text-white":selectedFitting === fitting ? "bg-black text-white" : "bg-gray-200 text-gray-700"
                     }`}
                     onClick={() => setSelectedFitting(fitting)}
                   >
@@ -268,12 +268,12 @@ const HeroSection = () => {
             {/* Add to Cart */}
             <div className="flex flex-col gap-2 mt-3">
               <div className="flex items-center gap-4 w-full">
-                <div className="flex items-center border rounded-lg overflow-hidden w-1/3">
-                  <button className="px-4 py-2 text-lg font-bold hover:bg-gray-100" onClick={handleQuantityDecrease}>
+                <div className="flex items-center border rounded-lg overflow-hidden w-[26%]">
+                  <button className="px-4 py-2 text-lg font-bold cursor-pointer" onClick={handleQuantityDecrease}>
                     −
                   </button>
                   <span className="px-6 py-2 font-semibold">{quantity}</span>
-                  <button className="px-4 py-2 text-lg font-bold hover:bg-gray-100" onClick={handleQuantityIncrease}>
+                  <button className="px-4 py-2 text-lg font-bold cursor-pointer" onClick={handleQuantityIncrease}>
                     +
                   </button>
                 </div>

@@ -1,14 +1,18 @@
+"use client";
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
 import TopBar from '@/components/TopBar'
-import React from 'react'
+import React, { useState } from 'react'
 
 const page = () => {
+  const [isDarkMode,setIsDarkMode]=useState(false);
+
+  const toggleDarkMode=()=>setIsDarkMode(!isDarkMode);
   return (
-    <div>
+    <div className={`${isDarkMode?"bg-[#0f172a] text-white":"bg-white"}`}>
       <TopBar/>
-      <Navbar/>
-      <HeroSection/>
+      <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
+      <HeroSection isDarkMode={isDarkMode}/>
     </div>
   )
 }
