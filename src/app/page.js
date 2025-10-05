@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import TopBar from '@/components/TopBar'
 import { useState } from 'react'
 
-const page = () => {
+const Page = () => {
   const [isDarkMode,setIsDarkMode]=useState(false);
 
   const toggleDarkMode=()=>setIsDarkMode(!isDarkMode);
@@ -17,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
