@@ -138,7 +138,7 @@ const HeroSection = ({ isDarkMode }) => {
                   width={700}
                   height={700}
                   alt="Main Product"
-                  className="rounded-lg transition-transform duration-500 ease-in-out hover:scale-110"
+                  className="rounded-lg transition-transform duration-500 ease-in-out"
                 />
               </div>
             </div>
