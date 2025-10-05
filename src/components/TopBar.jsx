@@ -1,7 +1,7 @@
 "use client";
 // TopBar.tsx
 import Link from 'next/link'
-import React from 'react'
+import React from 'react';
 
 const TopBar = () => {
   return (

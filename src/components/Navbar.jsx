@@ -1,7 +1,7 @@
 "use client";
 // Navbar.tsx
 import Link from 'next/link'
-import React from 'react'
+import React from 'react';
 import { CiSearch, CiUser } from 'react-icons/ci';
 import { MdLightMode,MdDarkMode } from "react-icons/md";
 import Image from 'next/image';

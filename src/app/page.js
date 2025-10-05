@@ -2,7 +2,7 @@
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
 import TopBar from '@/components/TopBar'
-import { useState } from 'react'
+import { useState } from 'react';
 
 const Page = () => {
   const [isDarkMode,setIsDarkMode]=useState(false);
